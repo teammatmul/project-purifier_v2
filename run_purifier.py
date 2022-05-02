@@ -109,19 +109,6 @@ def full_purifier_process(text, model=model, tokenizer=tokenizer):
 
         text = tokenizer.convert_tokens_to_string(masked_tokens)
 
-text = "니 대가리 속은 우동사리로 채워져있냐?"
-text, result = full_purifier_process(text)
-
-# 후처리
-text = text.replace(" ?","?").replace(" !","!").replace(" .",".").replace(" ,",",")
-
-
-
-
-
-
-
-
 
 
 
